@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+   background-color:whitesmoke;
+}
+
+@layer components{
+    .inputs{
+       @apply m-4 border-b-2 placeholder:font-extralight rounded-md p-1 hover:shadow-md focus:scale-105 focus:outline-blue-300
+    }
+
+    .buttons{
+        @apply mt-2 mb-3 bg-green-500 rounded-md text-white  p-2 w-32 mx-auto focus:ring-2 active:scale-105 active:bg-green-700
+    }
+    .card{
+        @apply flex flex-col p-6 rounded-lg md:text-lg bg-white sm:text-sm text-xs hover:shadow-xl shadow-inner ease-in-out duration-700 hover:scale-105
+    }
+
+}
